@@ -1,0 +1,57 @@
+name: Reporte de Error
+description: Crea un reporte para ayudarnos a mejorar
+title: "[BUG]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por tomarte el tiempo de llenar este reporte de error!
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: ¿Qué sucedió?
+      description: Describe el error y cómo ocurrió
+      placeholder: Cuéntanos qué viste!
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Pasos para reproducir
+      description: Pasos para reproducir el comportamiento
+      placeholder: |
+        1. Abre la app '...'
+        2. Toca en '....'
+        3. Desliza hacia '....'
+        4. Ve el error
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Versión
+      description: ¿Qué versión de la app estás usando?
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Dispositivo
+      description: ¿En qué dispositivo ocurrió el error?
+      placeholder: iPhone 12, Samsung Galaxy S21, etc.
+    validations:
+      required: true
+  - type: input
+    id: os-version
+    attributes:
+      label: Versión del sistema operativo
+      description: ¿Qué versión del sistema operativo estás usando?
+      placeholder: iOS 14.5, Android 11, etc.
+    validations:
+      required: true
+  - type: textarea
+    id: additional
+    attributes:
+      label: Información adicional
+      description: Añade cualquier otra información o capturas de pantalla sobre el problema aquí.
